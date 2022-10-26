@@ -1,0 +1,14 @@
+<div id="tshirt-div">
+    <img id="tshirt-backgroundpicture" src="assets/gallery-5d5afd3f1c7d6.png" />
+    <div id="drawingArea" class="drawing-area">
+        <div class="canvas-container">
+            <canvas id="tshirt-canvas" width="200" height="400"></canvas>
+        </div>
+    </div>
+</div>
+
+
+<button (click)="export()">export</button>
+
+<label for="tshirt-custompicture">Upload your design:</label>
+<input type="file" id="tshirt-custompicture" (change)="drop($event.target)" />
