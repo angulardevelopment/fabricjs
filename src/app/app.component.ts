@@ -32,9 +32,9 @@ export class AppComponent {
     if (node != null) {
 
 
-      domtoimage.toPng(node).then(function (dataUrl) {
+      domtoimage.toPng(node).then( (dataUrl)=> {
         // Print the data URL of the picture in the Console
-        console.log(dataUrl);
+        // console.log(dataUrl);
 
         // var img = new Image();
         // img.src = dataUrl;
@@ -88,5 +88,9 @@ export class AppComponent {
         this.canvas.remove(this.canvas.getActiveObject());
       }
     }, false);
+  }
+
+  deleteImage(){
+    this.canvas.remove(this.canvas.getActiveObject());
   }
 }
